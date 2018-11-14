@@ -8,6 +8,7 @@ import java.util.LinkedList;
 	private int V;
 	private LinkedList<Integer> adj[];
 	
+	// construct function
 	VertexCover(int v)
 	{
 		V = v;
@@ -26,6 +27,7 @@ import java.util.LinkedList;
 	}
 	void printVertexCover()
 	{
+		//initialized all nodes has not been covered
 		boolean visited[] = new boolean[V];
 		for (int i =0; i< V; i++)
 		{
@@ -33,6 +35,7 @@ import java.util.LinkedList;
 		}
 		Iterator<Integer> i;
 		
+		// cover all nodes
 		for (int u=0; u<V; u++)
 		{
 			if (visited[u] == false)
